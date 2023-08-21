@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 0.813rem;
+}
+
+.main__section,
+.main {
+  width: 100%;
+}
+
+.main,
+.main__section {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.main {
+  gap: 32px;
+}
+
+.main__section {
+  gap: 16px;
+  border-radius: 12px;
+  box-shadow: 14px 16px 33px 0px rgba(0, 0, 0, 0.089);
+}
+
+.section1__div,
+.section2__div,
+.section3__div,
+.section4__div,
+.section5__div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.section1__div--img,
+.section2__div--img,
+.section3__div--img,
+.section4__div--img,
+.section5__div--img {
+  border-radius: 100%;
+  width: 17%;
+  max-width: 45px;
+}
+
+.section1__div--img {
+  border: 4px solid hsl(263, 67%, 66%);
+}
+.section4__div--img {
+  border: 4px solid hsl(263, 55%, 52%);
+}
+
+.section1 {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 30%;
+}
+.section2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.section3,
+.section5 {
+  background-color: hsl(0, 0%, 100%);
+}
+.section4 {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.section1,
+.section2,
+.section4 {
+  color: hsl(0, 0%, 100%);
+}
+
+.section3,
+.section5 {
+  color: hsl(217, 19%, 35%);
+}
+
+.section1__h3,
+.section2__h3,
+.section3__h3,
+.section4__h3,
+.section5__h3 {
+  font-size: 1.25rem;
+}
+
+.section1Div__span,
+.section1__p,
+.section2Div__span,
+.section2__p,
+.section4Div__span,
+.section4__p {
+  color: hsla(0, 0%, 100%, 0.562);
+}
+
+.section3Div__span,
+.section3__p,
+.section5Div__span,
+.section5__p {
+  color: hsla(217, 19%, 35%, 0.555);
+}
+
+.section1Div,
+.section2Div,
+.section3Div,
+.section4Div,
+.section5Div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media (min-width: 1400px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 125px;
+  }
+
+  .main {
+    color: brown;
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 32px) / 4));
+    /* grid-template-columns: repeat(3, calc((75% - 32px) / 3)) auto ; */
+    /* grid-template-columns: auto auto auto auto ; */
+    /* grid-template-rows: 50% fr 50% fr ; */
+    /* grid-template-rows: (1/2) fr (1/2) fr; */
+    grid-template-rows: auto auto;
+
+    /* font-size: 13px; */
+  }
+
+  .section1 {
+    /* order: 1; */
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-size: 20%;
+  }
+
+  .section2 {
+    /* order: 2; */
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .section3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .section4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .section5 {
+    /* order: 3; */
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  .section1__p,
+  .section2__p,
+  .section3__p,
+  .section4__p,
+  .section5__p {
+    flex-grow: 1;
+  }
+}
