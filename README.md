@@ -1,8 +1,8 @@
 # Frontend Mentor - Testimonials grid section
 ---
-
+---
 - Github Pages : https://micolash89.github.io/Testimonials_grid_section/
-
+---
 ![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
